@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dice1Image"
+            android:src="@drawable/kocka1"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dice2Image"
+            android:src="@drawable/kocka1"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_diceButton"
+        android:layout_below="@+id/linearLayout"
+        android:text="1 KOCKA"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_diceButton"
+        android:layout_below="@+id/first_diceButton"
+        android:text="2 KOCKA"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/throwButton"
+        android:layout_below="@+id/second_diceButton"
+        android:text="DOBÁS"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetButton"
+        android:layout_below="@+id/throwButton"
+        android:text="RESET"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dicepokerButton"
+        android:layout_below="@id/resetButton"
+        android:text="KOCKAPÓKER"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textText"
+        android:layout_below="@+id/dicepokerButton"
+        android:text=""
+        android:scrollbars="vertical"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/normal_game_Button"
+        android:layout_below="@id/textText"
+        android:text="SIMA JÁTÉK"
+        />
+
+
+
+</RelativeLayout>
